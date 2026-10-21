@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <meta name="description" content="Recursion - explore the infinite Sierpiński triangle.">
+
+        <title>Recursion</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <main id="app">
+            <header id="header">
+                <h1>Recursion</h1>
+                <p>Explore the infinite.</p>
+            </header>
+
+            <section id="fractal-viewer" aria-label="Fractal viewer">
+                <canvas id="fractal-canvas" aria-label="Sierpiński triangle">Your browser doesn't support HTML canvas. Try a different one?</canvas>
+            </section>
+
+            <section id="controls" aria-label="Fractal controls">
+                <div class="control-group">
+                    <label for="depth">Sierpiński.depth()</label>
+                    <input
+                        type="range"
+                        id="depth"
+                        name="depth"
+                        min="0"
+                        max="8"
+                        value="4"
+                    >
+                    <output id="depth-value" for="depth">4</output>
+                </div>
+
+                <div class="control-group">
+                    <button id="play-generation" type="button">Generate triangle</button>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <p>FRACTAL ENGINE // VERSION 0</p>
+            </footer>
+        </main>
+    </body>
+</html>
